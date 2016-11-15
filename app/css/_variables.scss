@@ -1,1 +1,8 @@
-$light-grey: #999;
+$_color-white: #ffffff;
+$_color-mineshaft: #353535;
+$_color-st-tropaz: #235895;
+$_color-mirage: #1d2831;
+
+$header-nav-color: $_color-white;
+$header-nav-color-hover: rgba($_color-white, .6);
+$header-background: $_color-mirage;

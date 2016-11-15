@@ -1,5 +1,65 @@
-.container {
-  h1 {
-    color: $light-grey;
+.header {
+  background-color: $header-background;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 70px;
+  position: relative;
+
+  &__logo {
+    height: 56px;
+    position: relative;
+    width: 195px;
+  }
+
+  .navigation {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    i {
+      @include font-size(1.8);
+      color: $header-nav-color;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 630px;
+
+    &--item {
+      list-style: none;
+      position: relative;
+
+      a {
+        @include font-size(2);
+        color: $header-nav-color;
+        text-decoration: none;
+        transition: color .3s ease;
+      }
+
+      &::after {
+        background-color: $header-nav-color-hover;
+        bottom: 0;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        transition: width .3s ease;
+        width: 0;
+      }
+
+      &:hover {
+        a {
+          color: $header-nav-color-hover;
+        }
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
   }
 }
