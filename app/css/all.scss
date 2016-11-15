@@ -6,9 +6,10 @@
 @import "bourbon";
 @import "grid-settings";
 @import "neat";
-@import "base/base";
 
 // Import site specific CSS
 @import "variables";
+@import "mixins";
+@import "global";
 
 @import "header";
