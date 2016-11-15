@@ -30,3 +30,13 @@
   -ms-transform: scale($zoomLevel);
   -ms-transform-origin: 0 0;
 }
+
+@mixin font-awesome-icon($unicode, $icon-size: false) {
+  content: unquote("\"\\#{$unicode}\"");
+  font-family: FontAwesome;
+
+
+  @if $icon-size {
+    @include font-size($icon-size);
+  }
+}

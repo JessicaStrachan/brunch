@@ -467,8 +467,52 @@ body {
   font-size: 14px;
   font-size: 1.4rem; }
 
-.container h1 {
-  color: #999; }
+.header {
+  background-color: #1d2831;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 70px;
+  position: relative; }
+  .header__logo {
+    height: 56px;
+    position: relative;
+    width: 195px; }
+  .header .navigation {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%); }
+    .header .navigation i {
+      font-size: 18px;
+      font-size: 1.8rem;
+      color: #ffffff; }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 630px; }
+    .header__nav--item {
+      list-style: none;
+      position: relative; }
+      .header__nav--item a {
+        font-size: 20px;
+        font-size: 2rem;
+        color: #ffffff;
+        text-decoration: none;
+        transition: color .3s ease; }
+      .header__nav--item::after {
+        background-color: rgba(255, 255, 255, 0.6);
+        bottom: 0;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        transition: width .3s ease;
+        width: 0; }
+      .header__nav--item:hover a {
+        color: rgba(255, 255, 255, 0.6); }
+      .header__nav--item:hover::after {
+        width: 100%; }
 
 
 /*# sourceMappingURL=app.css.map*/
