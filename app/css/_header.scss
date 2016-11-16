@@ -60,9 +60,6 @@
 }
 
 .hero {
-  background-image: image-url('hero-banner.png');
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 700px;
   position: relative;
   width: 100%;
@@ -87,7 +84,7 @@
 
     &--small {
       @include font-size(1);
-      font-family: $secondary-display-font-family;
+      font-family: $secondary-font-family;
       letter-spacing: 15px;
       margin-bottom: 30px;
       text-transform: uppercase;
@@ -111,7 +108,7 @@
 .intro-text {
   @include font-size(1.8);
   color: $intro-text-font-color;
-  font-family: $paragraph-font-family;
+  font-family: $secondary-font-family;
   margin: 60px auto;
   max-width: 800px;
   text-align: center;
@@ -139,6 +136,7 @@
 
   &__intro {
     @include font-size(1.8);
+    font-family: $secondary-font-family;
     margin: 0 auto 60px;
     text-align: center;
     width: 800px;
@@ -149,5 +147,55 @@
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1200px;
+  }
+}
+
+.publisher {
+  display: flex;
+  height: 680px;
+  position: relative;
+
+  &__background-image {
+    height: 100%;
+    object-fit: cover;
+    width: 100vw;
+  }
+
+  &__info,
+  &__books {
+    margin: 0 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+  }
+
+
+  &__info {
+    @include font-size(1.8);
+    color: $publisher-font-color;
+    font-family: $secondary-font-family;
+    left: 180px;
+
+    &--paragraph {
+      padding: 40px 0 70px;
+      width: 400px;
+    }
+
+    &--link {
+      color: $publisher-font-color;
+    }
+  }
+
+  &__books {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 180px auto 0;
+    right: 0;
+    width: 610px;
+
+    a {
+      margin-left: 30px;
+    }
   }
 }
