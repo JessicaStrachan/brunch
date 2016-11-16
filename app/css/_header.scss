@@ -153,6 +153,7 @@
 .publisher {
   display: flex;
   height: 680px;
+  margin-bottom: 20px;
   position: relative;
 
   &__background-image {
@@ -175,11 +176,10 @@
     @include font-size(1.8);
     color: $publisher-font-color;
     font-family: $secondary-font-family;
-    left: 180px;
+    width: 400px;
 
     &--paragraph {
       padding: 40px 0 70px;
-      width: 400px;
     }
 
     &--link {
@@ -190,12 +190,31 @@
   &__books {
     display: flex;
     justify-content: space-between;
-    margin: auto 180px auto 0;
-    right: 0;
     width: 610px;
 
     a {
       margin-left: 30px;
     }
+  }
+}
+
+.publisher__twenty7 {
+  .publisher__info {
+    margin-left: 192px;
+    right: 180px;
+  }
+
+  .publisher__books {
+    left: 180px;
+  }
+}
+
+.publisher__zaffre {
+  .publisher__info {
+    left: 180px;
+  }
+
+  .publisher__books {
+    right: 180px;
   }
 }
