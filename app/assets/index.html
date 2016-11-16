@@ -3,8 +3,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0" />
   <title>Zaffre Publishing</title></title>
-
   <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Kreon|Roboto" rel="stylesheet">
 
 </head>
 <body>
@@ -14,8 +15,6 @@
         <img src="images/header-logo.png" alt="Zaffre Header"/img>
     </div>
     <div class="navigation">
-      <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-      <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
       <ul class="header__nav">
         <li class="header__nav--item"><a href="#">About us</a></li>
         <li class="header__nav--item"><a href="#">Spotlight Books</a></li>
@@ -25,8 +24,14 @@
       </ul>
     </div>
   </section>
+  <section class="hero">
+    <img class="hero--image" src="images/hero-banner.png" alt="Zaffre Hero Banner"/img>
+    <div class="hero__title">
+      <h4 class="hero__title--small">We Believe</h4>
+      <h1 class="hero__title--large">Reading is dreaming with open eyes</h1>
+    </div>
+  </section>
 
-<!-- End of body async scripts -->
 
   <script src="js/vendor.js"></script>
   <script src="js/app.js" onload="require('initialize');"></script>

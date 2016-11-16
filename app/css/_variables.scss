@@ -3,6 +3,11 @@ $_color-mineshaft: #353535;
 $_color-st-tropaz: #235895;
 $_color-mirage: #1d2831;
 
+$primary-display-font-family: 'Kreon', serif;
+$secondary-display-font-family: 'Roboto', sans-serif;
+
 $header-nav-color: $_color-white;
 $header-nav-color-hover: rgba($_color-white, .6);
 $header-background: $_color-mirage;
+
+$banner-title-color: $_color-white;
