@@ -368,85 +368,6 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap; }
-
-.col-1, .col-push-1, .col-2, .col-push-2, .col-3, .col-push-3, .col-4, .col-push-4, .col-5, .col-push-5, .col-6, .col-push-6, .col-7, .col-push-7, .col-8, .col-push-8, .col-9, .col-push-9, .col-10, .col-push-10, .col-11, .col-push-11, .col-12, .col-push-12 {
-  flex-flow: column; }
-
-.col-1 {
-  width: 8.33333%; }
-
-.col-push-1 {
-  margin-left: 8.33333%; }
-
-.col-2 {
-  width: 16.66667%; }
-
-.col-push-2 {
-  margin-left: 16.66667%; }
-
-.col-3 {
-  width: 25%; }
-
-.col-push-3 {
-  margin-left: 25%; }
-
-.col-4 {
-  width: 33.33333%; }
-
-.col-push-4 {
-  margin-left: 33.33333%; }
-
-.col-5 {
-  width: 41.66667%; }
-
-.col-push-5 {
-  margin-left: 41.66667%; }
-
-.col-6 {
-  width: 50%; }
-
-.col-push-6 {
-  margin-left: 50%; }
-
-.col-7 {
-  width: 58.33333%; }
-
-.col-push-7 {
-  margin-left: 58.33333%; }
-
-.col-8 {
-  width: 66.66667%; }
-
-.col-push-8 {
-  margin-left: 66.66667%; }
-
-.col-9 {
-  width: 75%; }
-
-.col-push-9 {
-  margin-left: 75%; }
-
-.col-10 {
-  width: 83.33333%; }
-
-.col-push-10 {
-  margin-left: 83.33333%; }
-
-.col-11 {
-  width: 91.66667%; }
-
-.col-push-11 {
-  margin-left: 91.66667%; }
-
-.col-12 {
-  width: 100%; }
-
-.col-push-12 {
-  margin-left: 100%; }
-
 html {
   box-sizing: border-box; }
 
@@ -463,9 +384,43 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
   font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 .header {
   background-color: #1d2831;
@@ -482,10 +437,6 @@ body {
     right: 70px;
     top: 50%;
     transform: translateY(-50%); }
-    .header .navigation i {
-      font-size: 18px;
-      font-size: 1.8rem;
-      color: #ffffff; }
   .header__nav {
     display: flex;
     justify-content: space-between;
@@ -513,6 +464,40 @@ body {
         color: rgba(255, 255, 255, 0.6); }
       .header__nav--item:hover::after {
         width: 100%; }
+
+.hero {
+  background-image: image-url("hero-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+  width: 100%; }
+  .hero--image {
+    z-index: 0; }
+  .hero__title {
+    bottom: 0;
+    color: #ffffff;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 1000px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 80px;
+    width: 100%;
+    z-index: 1; }
+    .hero__title--small {
+      font-size: 10px;
+      font-size: 1rem;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 15px;
+      margin-bottom: 30px;
+      text-transform: uppercase; }
+    .hero__title--large {
+      font-size: 70px;
+      font-size: 7rem;
+      font-family: "Kreon", serif; }
 
 
 /*# sourceMappingURL=app.css.map*/
