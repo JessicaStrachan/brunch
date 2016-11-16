@@ -39,7 +39,7 @@
         background-color: $header-nav-color-hover;
         bottom: 0;
         content: '';
-        height: 1px;
+        height: 2px;
         left: 0;
         position: absolute;
         transition: width .3s ease;
@@ -183,7 +183,34 @@
     }
 
     &--link {
-      color: $publisher-font-color;
+      margin: 0;
+      position: relative;
+      width: 113px;
+
+      a {
+        color: $publisher-font-color;
+        text-decoration: none;
+        transition: color .3s ease;
+
+        &::after {
+          background-color: $header-nav-color-hover;
+          bottom: 0;
+          content: '';
+          height: 2px;
+          left: 0;
+          position: absolute;
+          transition: width .3s ease;
+          width: 0;
+        }
+
+        &:hover {
+          color: $header-nav-color-hover;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 
@@ -194,6 +221,11 @@
 
     a {
       margin-left: 30px;
+      transition: transform .3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
