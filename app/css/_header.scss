@@ -121,7 +121,7 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    margin: 60px auto;
+    margin: 40px auto 160px;
     max-width: 1400px;
   }
 }
@@ -130,5 +130,24 @@
   @include font-size(3.5);
   color: $section-title-font-color;
   font-family: $section-title-font-family;
+  padding-bottom: 20px;
   text-align: center;
+}
+
+.imprint {
+  margin-bottom: 60px;
+
+  &__intro {
+    @include font-size(1.8);
+    margin: 0 auto 60px;
+    text-align: center;
+    width: 800px;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }
