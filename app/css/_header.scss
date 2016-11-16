@@ -251,3 +251,48 @@
     right: 180px;
   }
 }
+
+.team {
+  background-color: $team-background-color;
+  padding: 100px 0;
+
+  .section-title {
+    color: #fff;
+  }
+
+  .team__intro {
+    @include font-size(1.8);
+    color: $team-text-color;
+    margin: 0 auto 100px;
+    text-align: center;
+    width: 937px;
+  }
+
+  &--btn {
+    background-color: $_color-white;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+    transition: background-color .3s ease;
+    width: 434px;
+
+    a {
+      color: $team-button-font-color;
+      font-family: $team-button-font-family;
+      line-height: 70px;
+      position: absolute;
+      text-align: center;
+      text-decoration: none;
+      transition: color .3s ease;
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: $team-button-background-hover;
+
+      a {
+        color: $team-button-font-hover;
+      }
+    }
+  }
+}
