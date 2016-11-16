@@ -81,7 +81,7 @@
     position: absolute;
     right: 0;
     text-align: center;
-    top: 80px;
+    top: 120px;
     width: 100%;
     z-index: 1;
 
@@ -97,5 +97,13 @@
       @include font-size(7);
       font-family: $primary-display-font-family;
     }
+  }
+
+  &__logo {
+    bottom: 40px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
   }
 }

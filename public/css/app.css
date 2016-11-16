@@ -484,7 +484,7 @@ table {
     position: absolute;
     right: 0;
     text-align: center;
-    top: 80px;
+    top: 120px;
     width: 100%;
     z-index: 1; }
     .hero__title--small {
@@ -498,6 +498,12 @@ table {
       font-size: 70px;
       font-size: 7rem;
       font-family: "Kreon", serif; }
+  .hero__logo {
+    bottom: 40px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0; }
 
 
 /*# sourceMappingURL=app.css.map*/
