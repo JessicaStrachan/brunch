@@ -1,8 +1,8 @@
-$_color-white: #ffffff;
+$_color-white: #fff;
 $_color-mineshaft: #353535;
 $_color-st-tropaz: #235895;
 $_color-mirage: #1d2831;
-$_color-downriver: #0A2C54;
+$_color-downriver: #0a2c54;
 
 $primary-display-font-family: 'Kreon', serif;
 $secondary-font-family: 'Roboto', sans-serif;
@@ -23,8 +23,12 @@ $publisher-book-background-color: $_color-white;
 
 $team-background-color: $_color-downriver;
 $team-text-color: $_color-white;
+$team-info-font-family: $secondary-font-family;
 $team-button-background: $_color-white;
 $team-button-font-color: $_color-st-tropaz;
 $team-button-font-family: $secondary-font-family;
 $team-button-background-hover: $_color-st-tropaz;
 $team-button-font-hover: $_color-white;
+
+$contact-tel-email-link-color: $_color-st-tropaz;
+$contact-tel-email-link-hover: $_color-downriver;

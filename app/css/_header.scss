@@ -263,6 +263,7 @@
   .team__intro {
     @include font-size(1.8);
     color: $team-text-color;
+    font-family: $team-info-font-family;
     margin: 0 auto 100px;
     text-align: center;
     width: 937px;
@@ -292,6 +293,57 @@
 
       a {
         color: $team-button-font-hover;
+      }
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  padding: 65px 200px 90px;
+
+  .section-title {
+    text-align: left;
+  }
+
+  &__info,
+  &__form {
+    width: 50%;
+  }
+
+  &__info {
+    &--intro,
+    &--address {
+      font-family: $team-info-font-family;
+    }
+
+    &--address {
+      @include font-size(1);
+
+      a {
+        color: $contact-tel-email-link-color;
+        position: relative;
+        text-decoration: none;
+        transition: color .3s ease;
+
+        &::after {
+          background-color: $contact-tel-email-link-hover;
+          bottom: 0;
+          content: '';
+          height: 2px;
+          left: 0;
+          position: absolute;
+          transition: width .3s ease;
+          width: 0;
+        }
+
+        &:hover {
+          color: $contact-tel-email-link-hover;
+
+          &::after {
+            width: 100%;
+          }
+        }
       }
     }
   }
