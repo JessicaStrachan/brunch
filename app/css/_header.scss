@@ -116,3 +116,19 @@
   max-width: 800px;
   text-align: center;
 }
+
+.spotlight {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    max-width: 1400px;
+  }
+}
+
+.section-title {
+  @include font-size(3.5);
+  color: $section-title-font-color;
+  font-family: $section-title-font-family;
+  text-align: center;
+}
