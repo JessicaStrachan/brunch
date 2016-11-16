@@ -505,5 +505,14 @@ table {
     position: absolute;
     right: 0; }
 
+.intro-text {
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #353535;
+  font-family: "Roboto", sans-serif;
+  margin: 60px auto;
+  max-width: 800px;
+  text-align: center; }
+
 
 /*# sourceMappingURL=app.css.map*/
