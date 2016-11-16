@@ -16,11 +16,6 @@
     right: 70px;
     top: 50%;
     transform: translateY(-50%);
-
-    i {
-      @include font-size(1.8);
-      color: $header-nav-color;
-    }
   }
 
   &__nav {
@@ -60,6 +55,47 @@
           width: 100%;
         }
       }
+    }
+  }
+}
+
+.hero {
+  background-image: image-url('hero-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+  width: 100%;
+
+  &--image {
+    z-index: 0;
+  }
+
+  &__title {
+    bottom: 0;
+    color: $banner-title-color;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 1000px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 80px;
+    width: 100%;
+    z-index: 1;
+
+    &--small {
+      @include font-size(1);
+      font-family: $secondary-display-font-family;
+      letter-spacing: 15px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    &--large {
+      @include font-size(7);
+      font-family: $primary-display-font-family;
     }
   }
 }
