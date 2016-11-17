@@ -65,12 +65,13 @@
 }
 
 .hero {
-  height: 700px;
   position: relative;
   width: 100%;
 
   &--image {
     z-index: 0;
+    object-fit: cover;
+    width: 100vw;
   }
 
   &__title {
@@ -102,7 +103,7 @@
   }
 
   &__logo {
-    bottom: 40px;
+    bottom: 20px;
     left: 0;
     margin: auto;
     position: absolute;

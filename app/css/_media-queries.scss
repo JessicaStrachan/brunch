@@ -1,3 +1,21 @@
+@media screen and (max-width: 1600px) {
+  .hero__logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .hero__title {
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .hero__title--large {
+    @include font-size(5.4);
+  }
+}
+
 @media screen and (max-width: 1020px) {
   .header {
     padding: 35px 20px;
@@ -5,6 +23,10 @@
     .navigation {
       right: 30px;
     }
+  }
+
+  .hero__title {
+    padding: 0 30px;
   }
 }
 
@@ -51,5 +73,67 @@
         }
       }
     }
+  }
+
+  .hero {
+    &__title--large {
+      @include font-size(5);
+    }
+
+    &__logo {
+      bottom: 0;
+      top: 240px;
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .hero__title {
+    top: 40px;
+
+    &--small {
+        margin-bottom: 10px;
+    }
+
+    &--large {
+      @include font-size(4.5);
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .hero {
+    &__title--large {
+      @include font-size(4);
+    }
+
+    &__logo {
+      bottom: 0;
+      top: 140px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero__title--large {
+    @include font-size(3);
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .hero {
+    &__title {
+      top: 20px;
+
+      &--large {
+        @include font-size(2.5);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero__title--large {
+    @include font-size(2);
   }
 }
