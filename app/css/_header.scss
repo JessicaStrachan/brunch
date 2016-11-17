@@ -445,6 +445,23 @@
   }
 }
 
+.footer {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  display: flex;
+  font-family: $secondary-font-family;
+  height: 180px;
+  padding: 0 200px;
+  position: relative;
+
+  cite,
+  &__social {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 %form-shared-styles {
   height: 70px;
   margin-bottom: 20px;
