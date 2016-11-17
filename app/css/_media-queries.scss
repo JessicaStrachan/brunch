@@ -99,6 +99,17 @@
       @include font-size(4.5);
     }
   }
+
+  .intro-text {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-text{
+    @include font-size(1.4);
+    margin: 30px 0;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -129,6 +140,11 @@
         @include font-size(2.5);
       }
     }
+  }
+
+  .intro-text{
+    @include font-size(1);
+    margin: 30px 0;
   }
 }
 
