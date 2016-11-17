@@ -1,0 +1,55 @@
+@media screen and (max-width: 1020px) {
+  .header {
+    padding: 35px 20px;
+
+    .navigation {
+      right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .header {
+    .navigation {
+      display: none;
+    }
+
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      height: 25px;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 25px;
+
+      .menu-bar {
+        background-color: $mobile-menu-icon;
+        content: '';
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 25px;
+
+        &::before,
+        &::after {
+          background-color: $mobile-menu-icon;
+          content: '';
+          height: 3px;
+          position: absolute;
+          width: 25px;
+        }
+
+        &::before {
+          top: -8px;
+        }
+
+        &::after {
+          bottom: -8px;
+        }
+      }
+    }
+  }
+}

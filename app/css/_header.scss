@@ -18,6 +18,10 @@
     transform: translateY(-50%);
   }
 
+  .mobile-navigation {
+    display: none;
+  }
+
   &__nav {
     display: flex;
     justify-content: space-between;
