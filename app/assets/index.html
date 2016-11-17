@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="css/app.css" />
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Kreon|Roboto" rel="stylesheet">
-
 </head>
 <body>
 
@@ -168,7 +167,27 @@
         </p>
       </div>
     </div>
-    <div class="contact__form"></div>
+    <div class="contact__form">
+      <form>
+        <div class="name">
+          <input class="input" type="text" name="name" placeholder="Name *"></input>
+        </div>
+        <div class="email">
+          <input class="input" type="text" name="email" placeholder="Email *"></input>
+        </div>
+        <div class="number">
+          <input class="input" type="text" name="number" placeholder="Contact Number *"></input>
+        </div>
+        <select name="enquiry">
+          <option value="nature-of-enquiry">Nature of Enquiry</option>
+          <option value="submission">Book Submission</option>
+          <option value="press">Press</option>
+          <option value="careers">Careers</option>
+        </select>
+        <textarea class="text-area" name="Message/Details" placeholder="Message/Details" rows="8" cols="30"></textarea>
+        <input class="btn submit-btn" type="submit" value="Get in Touch"></input>
+      </form>
+    </div>
   </section>
 
   <script src="js/vendor.js"></script>

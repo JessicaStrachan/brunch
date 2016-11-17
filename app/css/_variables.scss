@@ -3,6 +3,8 @@ $_color-mineshaft: #353535;
 $_color-st-tropaz: #235895;
 $_color-mirage: #1d2831;
 $_color-downriver: #0a2c54;
+$_color-gallery: #f0f0f0;
+$_color-alto: #cecece;
 
 $primary-display-font-family: 'Kreon', serif;
 $secondary-font-family: 'Roboto', sans-serif;
@@ -32,3 +34,12 @@ $team-button-font-hover: $_color-white;
 
 $contact-tel-email-link-color: $_color-st-tropaz;
 $contact-tel-email-link-hover: $_color-downriver;
+$contact-form-icon-color: $_color-downriver;
+$contact-form-input-background: $_color-gallery;
+$contact-form-input-border: $_color-alto;
+$contact-form-focus-border: $_color-st-tropaz;
+$contact-form-font-color: $_color-mirage;
+$contact-submit-button-background: $_color-st-tropaz;
+$contact-submit-button-font-color: $_color-white;
+$contact-submit-button-background-hover: $_color-downriver;
+$contact-map-temp-background: $_color-mineshaft;

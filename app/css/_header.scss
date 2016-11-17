@@ -257,7 +257,7 @@
   padding: 100px 0;
 
   .section-title {
-    color: #fff;
+    color: $team-text-color;
   }
 
   .team__intro {
@@ -312,6 +312,8 @@
   }
 
   &__info {
+    margin-right: 65px;
+
     &--intro,
     &--address {
       font-family: $team-info-font-family;
@@ -319,6 +321,7 @@
 
     &--address {
       @include font-size(1);
+      line-height: 25px;
 
       a {
         color: $contact-tel-email-link-color;
@@ -348,9 +351,101 @@
     }
 
     &--map {
-      background-color: grey;
+      background-color: $contact-map-temp-background;
       height: 400px;
+      margin: 60px 0 42px;
       width: 100%;
     }
   }
+
+  &__form {
+    margin-left: 95px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 77px;
+      width: 434px;
+
+      .input,
+      .text-area {
+        background-color: $contact-form-input-background;
+        border: 2px solid $contact-form-input-border;
+
+        &:focus {
+          border: 2px solid $contact-form-focus-border;
+          outline: none;
+        }
+      }
+
+      .input,
+      .submit-btn {
+        @extend %form-shared-styles;
+        font-family: $secondary-font-family;
+        height: 70px;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      select {
+        @extend %form-shared-styles;
+      }
+
+      .input {
+        padding-left: 60px;
+      }
+
+      .text-area {
+        margin-bottom: 20px;
+      }
+    }
+
+    .name,
+    .email,
+    .number {
+      position: relative;
+
+      &::before {
+        @include font-size(2);
+        color: $contact-form-icon-color;
+        left: 15px;
+        position: absolute;
+        top: 20px;
+      }
+
+      input {
+        color: $contact-form-font-color;
+      }
+    }
+
+    .name::before {
+      content: '\f007';
+    }
+
+    .email::before {
+      content: '\f003';
+    }
+
+    .number::before {
+      content: '\f095';
+    }
+
+    .submit-btn {
+      background-color: $contact-submit-button-background;
+      border: 0;
+      color: $contact-submit-button-font-color;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background-color .3s ease;
+
+      &:hover {
+        background-color: $contact-submit-button-background-hover;
+      }
+    }
+  }
+}
+
+%form-shared-styles {
+  height: 70px;
+  margin-bottom: 20px;
 }
